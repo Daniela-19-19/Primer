@@ -1,12 +1,15 @@
 const temas = [
-"Tienda Santa Fe",
-"Tienda Fontanar",
-"Tienda Centro Chia",
-"Tienda Palatino"
+    "Tienda Santa Fe",
+    "Tienda Fontanar",
+    "Tienda Centro Chia",
+    "Tienda Palatino"
 ];
 
-let temaactual = 2;
+let temaActual = 0;
 
 function cambiartema() {
-//const parrafos = document.querySelectorAll(p);
-const el parrafo = document.querySelector(.otroparrafo)}
+    //const parrafos = document.querySelectorAll('p');
+    const elParrafo = document.querySelector('.otro-parrafo');
+    temaActual = (temaActual + 1) % temas.length;
+    elParrafo.innerHTML = temas[temaActual];
+}
